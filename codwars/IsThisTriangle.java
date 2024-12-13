@@ -14,6 +14,7 @@
 // 1,2,9 -> false 
 class IsThisTriangle{
     public static void main(String[] args) {
+        isTriangle(1,2,3);
         boolean b = isTriangle(1, 2, 9);   
         System.out.println(b);
     }
@@ -22,7 +23,7 @@ class IsThisTriangle{
         if (a<=0||b<=0||c<=0) {
             return false;
         }
-        if (a+b<=c||a+c<=b||b+c<=a) {
+        if (a+b<=c||a+c<=b||b+c<a) {
             return false;
         }
         return true;
